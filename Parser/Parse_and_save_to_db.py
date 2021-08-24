@@ -40,7 +40,7 @@ def create_table_to_bd(company_name, connect):
     '''Метод для створення таблиці з назвою компанії'''
     cursor = connect.cursor()
     cursor.execute(f'''CREATE TABLE IF NOT EXISTS {company_name}   
-         (DATE CHAR(100),
+         (DATE CHAR(10),
          OPEN FLOAT,
          HIGH FLOAT,
          LOW FLOAT,
