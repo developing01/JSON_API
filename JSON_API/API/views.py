@@ -1,6 +1,5 @@
 from rest_framework.response import Response
 from rest_framework.views import APIView
-import psycopg2
 from .models import Pd, Pvl, Pins, Cldr, Docu, Run, Zm, Zuo
 
 from .serializers import PdSerializers, CldrSerializers, DocuSerializers, PinsSerializers, PvlSerializers, RunSerializers, ZmSerializers, ZuoSerializers
@@ -15,7 +14,7 @@ class PdView(APIView):
 
 
 class CldrView(APIView):
-    '''Данні компанії PD'''
+    '''Данні компанії CLDR'''
     def get(self, request):
         data = Cldr.objects.all()
         serializer = CldrSerializers(data, many=True)
@@ -23,7 +22,7 @@ class CldrView(APIView):
 
 
 class DocuView(APIView):
-    '''Данні компанії PD'''
+    '''Данні компанії DOCU'''
     def get(self, request):
         data = Docu.objects.all()
         serializer = DocuSerializers(data, many=True)
@@ -31,7 +30,7 @@ class DocuView(APIView):
 
 
 class PinsView(APIView):
-    '''Данні компанії PD'''
+    '''Данні компанії PINS'''
     def get(self, request):
         data = Pins.objects.all()
         serializer = PinsSerializers(data, many=True)
@@ -39,7 +38,7 @@ class PinsView(APIView):
 
 
 class PvlView(APIView):
-    '''Данні компанії PD'''
+    '''Данні компанії PVL'''
     def get(self, request):
         data = Pvl.objects.all()
         serializer = PvlSerializers(data, many=True)
@@ -47,7 +46,7 @@ class PvlView(APIView):
 
 
 class RunView(APIView):
-    '''Данні компанії PD'''
+    '''Данні компанії RUN'''
     def get(self, request):
         data = Run.objects.all()
         serializer = RunSerializers(data, many=True)
@@ -55,7 +54,7 @@ class RunView(APIView):
 
 
 class ZmView(APIView):
-    '''Данні компанії PD'''
+    '''Данні компанії ZM'''
     def get(self, request):
         data = Zm.objects.all()
         serializer = ZmSerializers(data, many=True)
@@ -63,7 +62,7 @@ class ZmView(APIView):
 
 
 class ZuoView(APIView):
-    '''Данні компанії PD'''
+    '''Данні компанії ZUO'''
     def get(self, request):
         data = Zuo.objects.all()
         serializer = ZuoSerializers(data, many=True)

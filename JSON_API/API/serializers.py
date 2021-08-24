@@ -11,7 +11,7 @@ class PdSerializers(serializers.ModelSerializer):
 
 
 class CldrSerializers(serializers.ModelSerializer):
-    '''Данні компанії PD'''
+    '''Данні компанії CLDR'''
 
     class Meta:
         model = Cldr
@@ -19,7 +19,7 @@ class CldrSerializers(serializers.ModelSerializer):
 
 
 class DocuSerializers(serializers.ModelSerializer):
-    '''Данні компанії PD'''
+    '''Данні компанії DOCU'''
 
     class Meta:
         model = Docu
@@ -27,7 +27,7 @@ class DocuSerializers(serializers.ModelSerializer):
 
 
 class PinsSerializers(serializers.ModelSerializer):
-    '''Данні компанії PD'''
+    '''Данні компанії PINS'''
 
     class Meta:
         model = Pins
@@ -35,7 +35,7 @@ class PinsSerializers(serializers.ModelSerializer):
 
 
 class PvlSerializers(serializers.ModelSerializer):
-    '''Данні компанії PD'''
+    '''Данні компанії PVL'''
 
     class Meta:
         model = Pvl
@@ -43,7 +43,7 @@ class PvlSerializers(serializers.ModelSerializer):
 
 
 class RunSerializers(serializers.ModelSerializer):
-    '''Данні компанії PD'''
+    '''Данні компанії RUN'''
 
     class Meta:
         model = Run
@@ -51,7 +51,7 @@ class RunSerializers(serializers.ModelSerializer):
 
 
 class ZmSerializers(serializers.ModelSerializer):
-    '''Данні компанії PD'''
+    '''Данні компанії ZM'''
 
     class Meta:
         model = Zm
@@ -59,7 +59,7 @@ class ZmSerializers(serializers.ModelSerializer):
 
 
 class ZuoSerializers(serializers.ModelSerializer):
-    '''Данні компанії PD'''
+    '''Данні компанії ZUO'''
 
     class Meta:
         model = Zuo
